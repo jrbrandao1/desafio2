@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>DncWeather</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <h1>DncWeather</h1>
+        </div>
+        <ul>
+            <li>Endereços</li>
+            <li>Previsão do tempo</li>
+        </ul>
+    </header>
+
+    <!-- SEÇÃO -->
+    <section id="secao__inicial">
+        <h1>Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.</h1>
+        <img src="img/sol-nuvem.svg" alt="Sol e nuvem" id="img__sol">
+    </section>
+    <!-- FORMULARIO -->
+    <div id="formulario">
+        <div id="formulario__info">
+            <form id="form" action="">
+                <label for="nome">Primeiro Nome:</label> <br><br>
+                <input class="formulario__info" type="text" placeholder="Insira seu primeiro nome:">
+            </form>
+        </div>
+        <div id="formulario__info">
+            <form id="form" action="">
+                <label for="e-mail">E-mail:</label> <br> <br>
+
+                <input class="formulario__info" type="email" placeholder="Insira seu e-mail:">
+            </form>
+        </div>
+        <div id="formulario__info">
+            <form id="form" action="">
+                <label for="CEP">Digite o CEP:</label> <br><br>
+                <input class="formulario__info" type="text" placeholder="Insira o CEP:">
+            </form>
+        </div>
+        <div id="formulario__info">
+            <form id="form" action="">
+                <label for="">Digite a latitude e longitude para saber a previsão:</label> <br><br>
+                <input class="formulario__previsao" type="text" placeholder="Latitude">
+
+
+                <input class="formulario__previsao" type="text" placeholder="Longitude">
+            </form>
+            <button>Acessar</button>
+        </div>
+    </div>
+    <div id="texto-ilustrativo">
+        <h1>Resultado da busca por CEP:</h1> <img id="img__loc" src="img/localidade.svg" alt="Imagem Localidade">
+    </div>
+
+
+</body>
+
+</html>
