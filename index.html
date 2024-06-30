@@ -22,49 +22,83 @@
             <li>Previsão do tempo</li>
         </ul>
     </header>
+    <div class="container">
+        <!-- SEÇÃO -->
+        <section id="secao__inicial">
+            <h1>Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.</h1>
+            <img src="img/sol-nuvem.svg" alt="Sol e nuvem" id="img__sol">
+        </section>
+        <!-- FORMULARIO -->
+        <div id="formulario">
+            <div id="formulario__info">
+                <form id="form" action="">
+                    <label for="nome">Primeiro Nome:</label> <br><br>
+                    <input class="formulario__info" type="text" placeholder="Insira seu primeiro nome:">
+                </form>
+            </div>
+            <div id="formulario__info">
+                <form id="form" action="">
+                    <label for="e-mail">E-mail:</label> <br> <br>
 
-    <!-- SEÇÃO -->
-    <section id="secao__inicial">
-        <h1>Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.</h1>
-        <img src="img/sol-nuvem.svg" alt="Sol e nuvem" id="img__sol">
-    </section>
-    <!-- FORMULARIO -->
-    <div id="formulario">
-        <div id="formulario__info">
-            <form id="form" action="">
-                <label for="nome">Primeiro Nome:</label> <br><br>
-                <input class="formulario__info" type="text" placeholder="Insira seu primeiro nome:">
-            </form>
-        </div>
-        <div id="formulario__info">
-            <form id="form" action="">
-                <label for="e-mail">E-mail:</label> <br> <br>
-
-                <input class="formulario__info" type="email" placeholder="Insira seu e-mail:">
-            </form>
-        </div>
-        <div id="formulario__info">
-            <form id="form" action="">
-                <label for="CEP">Digite o CEP:</label> <br><br>
-                <input class="formulario__info" type="text" placeholder="Insira o CEP:">
-            </form>
-        </div>
-        <div id="formulario__info">
-            <form id="form" action="">
-                <label for="">Digite a latitude e longitude para saber a previsão:</label> <br><br>
-                <input class="formulario__previsao" type="text" placeholder="Latitude">
+                    <input class="formulario__info" type="email" placeholder="Insira seu e-mail:">
+                </form>
+            </div>
+            <div id="formulario__info">
+                <form id="form" action="">
+                    <label for="CEP">Digite o CEP:</label> <br><br>
+                    <input id="cep" class="formulario__info" type="text" placeholder="Insira o CEP:">
+                </form>
+            </div>
+            <div id="formulario__info">
+                <form id="form" action="">
+                    <label for="">Digite a latitude e longitude para saber a previsão:</label> <br><br>
+                    <input id="latitude" class="formulario__previsao" type="text" placeholder="Latitude">
 
 
-                <input class="formulario__previsao" type="text" placeholder="Longitude">
-            </form>
-            <button>Acessar</button>
+                    <input id="longitude" class="formulario__previsao" type="text" placeholder="Longitude">
+                </form>
+                <button onclick="buscarCep()">Acessar</button>
+            </div>
         </div>
+        <div id="texto-ilustrativo">
+            <h1>Resultado da busca por CEP:</h1> <img id="img__loc" src="img/localidade.svg" alt="Imagem Localidade">
+        </div>
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>
+                        Logradouro/nome
+                    </th>
+                    <th>
+                        Bairro/Distrito
+                    </th>
+                    <th>
+                        Localidade/UF
+                    </th>
+                </tr>
+                <tr id="endereco">
+
+                </tr>
+            </table>
+        </div>
+        <div id="texto-ilustrativo">
+            <h1>Previsão do tempo na região:</h1> <img id="img__loc" src="img/nuvem.svg" alt="Imagem Localidade">
+        </div>
+
+        <div id="card">
+            <h4>
+                Previsão de tempo de acordo com a região: <span id="temperatura"></span>C
+            </h4>
+        </div>
+
     </div>
-    <div id="texto-ilustrativo">
-        <h1>Resultado da busca por CEP:</h1> <img id="img__loc" src="img/localidade.svg" alt="Imagem Localidade">
-    </div>
-
-
+    <footer>
+        <p>
+            Termos de Uso | Política de Privacidade
+        </p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
