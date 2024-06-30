@@ -140,21 +140,33 @@ margin-left: 2em;
  }
 
  table {
-     font-family: arial, sans-serif;
-     border-collapse: collapse;
      width: 100%;
+     border-spacing: 0;
+     border-radius: 20px;
+     background-color: rgba(12, 112, 242, 0.9);
+     color: white;
+     font-weight: bold;
  }
 
- td,
  th {
-     border: 1px solid #dddddd;
-     text-align: left;
-     padding: 8px;
+     padding: 10px 0;
  }
 
- tr:nth-child(even) {
-     background-color: #dddddd;
+ td {
+     background-color: white;
+     color: black;
+     padding: 10px 0;
+     text-align: center;
  }
+
+ td:nth-child(1) {
+     border-radius: 0 0 0 20px;
+ }
+
+ td:last-child {
+     border-radius: 0 0 20px 0;
+ }
+ 
 
 
 #card {
@@ -172,4 +184,5 @@ footer {
     justify-content: end;
     color: white;
     padding: 1.5em 2.5em;
-}
+} 
+

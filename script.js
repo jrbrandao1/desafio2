@@ -10,12 +10,21 @@ async function obterPrevisao(latitude, longitude) {
     return data;
 }
 
+async function buscar() {
+    await buscarCep()
+    await buscarTemperatura()
+};
+
+
 async function buscarCep() {
     const cep = document.getElementById('cep').value;
     const resultado = await obterEndereco(cep);
     const tr = document.getElementById('endereco');
-    tr.innerHtml = `<td>${resultado.logradouro}</td>
-    <td>${resultado.bairro}</td> <td>${resultado.uf}</td>`;
+    tr.innerHTML = `
+    <td>${resultado.logradouro}</td>
+    <td>${resultado.bairro}</td> 
+    <td>${resultado.uf}</td>
+    `;
 
 }
 
